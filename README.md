@@ -2,4 +2,4 @@
 
 ### Seed the words
 
-`cat /usr/share/dict/words > server/words.js`
+`cat /usr/share/dict/words > server/words.txt`
