@@ -3,12 +3,24 @@
 </head>
 
 <body>
-  {{> hello}}
+  {{> players}}
+  {{> register}}
 </body>
 
-<template name="hello">
-  <h1>Hello World!</h1>
-  {{greeting}}
-  <input class='this'type="button" value="Click" />
-  <input type='button' value='logger'>
+<template name="board">
+  {{#each }}
+  {{/each}}
+</template>
+
+
+<template name="register">
+  <input type="text" class="player-name" value="{{player}}">
+</template>
+
+<template name="players">
+  <ul>
+  {{#each players}}
+    <li>{{name}}</li>
+  {{/each}}
+  </ul>
 </template>
